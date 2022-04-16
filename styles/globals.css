@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+[data-aos^=hide][data-aos^=hide] {
+    opacity: 1;
+    transition-property: opacity, transform
+}
+
+[data-aos^=hide][data-aos^=hide].aos-animate {
+    opacity: 0;
+    transform: translate(0)
+}
+
+table, th, td {
+  border: 1px solid black;
 }
